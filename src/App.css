@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img{
+  max-width: 100%;
+}
+
+.wrapper{
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.top-header-area h2{
+  font-size: 18px;
+  text-align: center;
+  background: #F18935;
+  padding: 12px 0;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a{
+  font-size: 18px;
+  color: #000;
+   font-family: "Anek Bangla", serif;
+   text-decoration: none;
+  margin: 0 12px;
+  font-weight: 500;
+}
+
+.logo{
+  width: 180px;
+  
+}
+
+.cart-icon{
+  width: 30px;
+  position: relative;
+ 
+ margin: 0 10px;
+}
+
+.cart-area{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.menu-icon{
+  display: none;
+}
+
+.cart-mobile{
+  display: none;
+}
+.cart-icon span{
+  position: absolute;
+  right:8px ;
+  top: -18px;
+  font-size: 16px;
+  background: red;
+  width: 17px;
+  height: 17px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.close{
+  display: none;
+}
+
+.open{
+  display: block;
+}
+
+
+
+.mobile-logo{
+  display: none;
+}
+.hamburger{
+display: none;
+padding: 0 25px;
+}
+
+.mobile-menu{
+  display: none;
+}
+.mobile-menu {
+ background: #fff;
+  position: fixed;
+ padding:  0 10px;
+  width: 35%;
+  height: 100%;
+  top: 0;
+  left: -100%; 
+  transition: left 0.5s ease; 
+  z-index: 1000;
+ font-family: "Anek Bangla", serif;
+ }
+  .mobile-menu nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 20px;
+}
+.mobile-menu ul li {
+  margin: 10px 0;
+}
+
+.mobile-menu  ul li a {
+  text-decoration: none;
+  color: #000 !important;
+  font-size: 20px;
+   font-family: "Anek Bangla", serif;
+}
+ nav ul li  a{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+    font-size: 20px;
+
+}
+
+
+/* About Area Styling */
+
+.about-area{
+ 
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 40px;
+  padding: 15px;
+ 
+}
+.about-img img{
+width: 300px;
+flex-basis: 40%;
+}
+
+.about-content{
+  flex-basis: 55%;
+ font-family: "Anek Bangla", serif;
+}
+
+.about-content h2{
+  color: #F18935;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 45px;
+}
+
+.about-content h4{
+  font-family: 20px;
+  line-height: 25px;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+   font-family: "Anek Bangla", serif;
+
+}
+.about-content p{
+  font-family: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  padding-top: 10px;
+   font-family: "Anek Bangla", serif;
+}
+
+/* product area styling */
+
+.product-area{
+  text-align: center;
+  padding: 15px 0;
+}
+.product-area h2{
+  margin: 15px 0;
+}
+
+.product-content{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+ 
+}
+.product-about {
+  text-align: center;
+}
+.product-about img{
+  width: 340px;
+  height: 340px;
+  object-fit: cover;
+}
+.product-about h4{
+  font-size: 16px;
+ font-family: "Anek Bangla", serif;
+  font-weight: 400;
+}
+.product-about p{
+  font-size: 18px;
+  padding: 10px 0;
+ font-family: "Anek Bangla", serif;
+
+}
+
+Link{
+  text-decoration: none;
+  
+}
+.single-product{
+  text-align: center;
+}
+.single-product img{
+  width: 300px;
+}
+/* service area styling */
+
+.faq-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+  background-color: #f9f9f9;
+}
+
+.faq-header h3 {
+  margin: 0;
+}
+
+.faq-header .icon {
+  font-size: 24px;
+  transition: transform 0.3s;
+}
+
+.faq-body {
+  display: none;
+  padding: 15px;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+}
+
+.faq-item.active .faq-body {
+  display: block;
+}
+
+.faq-item.active .icon {
+  transform: rotate(45deg); /* Change "+" to "x" on expand */
+}
+
+.service-area h2{
+  text-align: center;
+  margin: 20px 0;
+   font-family: "Anek Bangla", serif;
+}
+
+
+/* contact Area style */
+
+.contact-area{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-basis: 100%;
+}
+
+.contact-about h4{
+  font-family: "Anek Bangla", serif;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+.contact-about{
+  flex-basis: 30%;
+}
+.contact-sec{
+  flex-basis: 65%;
+}
+
+.contact-sec h2{
+  text-align: center;
+  font-family: "Anek Bangla", serif;
+  font-weight: 400;
+  margin-top: 30px;
+}
+.form-area label{
+  font-size: 20px;
+  padding: 10px 0;
+}
+.form-area input, textarea{
+  font-size: 18px;
+  margin-top: 10px;
+}
+.form-area input{
+  width: 60%;
+  padding: 10px 14px;
+}
+.form-area{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+textarea{
+  width: 60%;
+  margin-top: 20px;
+}
+.result{
+ font-size: 18px;
+padding-top: 10px;
+}
+
+
+button{
+  padding: 10px 15px;
+  color: white;
+  background: #F18935;
+  font-size: 15px;
+margin: 10px;
+  border-radius: 10px;
+ outline: none;
+ 
+}
+
+.cart-page, .amount,.thanks{
+  text-align: center;
+}
+.cart-page img, .thanks img{
+  width: 300px;
+}
+.footer-area{
+  text-align: center;
+  margin-top: 30px;
+  background: #F18935;
+  padding: 10px 0;
+  color: #fff;
+}
+.thanks p{
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+
+
+/* Responsive css */
+
+@media (max-width:1081px) {
+  .product-content{
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    padding: 0 10px;
+  }
+}
+@media (max-width:840px) {
+  .product-content{
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width:760px) {
+  .about-area{
+    flex-direction: column;
+   margin-top: 20px;
+  }
+  .about-img img {
+    width: 95%;
+   margin: 0 auto;
+   display: block;
+  }
+  .product-content{
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width:524px){
+  nav ul li a{
+display: block;
+}
+
+ .hamburger{ 
+   display: block; 
+ 
+  }
+
+  .mobile-logo{
+    display: block;
+    width: 110px;
+  }
+  .logo{
+   width: 140px;
+  }
+  .mobile-menu{
+    display: block;
+  }
+  
+  nav{
+    display: none;
+  }
+
+    .menu-icon{
+  display: block;
+    position: fixed;
+  top: 90px;
+    right:0; 
+    z-index: 1001;
+    width: 30px;
+    cursor: pointer;
+}
+.cart-mobile{
+  display: block;
+}
+.cart-desktop{
+  display: none;
+}
+.form-area input{
+  width: 95%;
+}
+textarea{
+  width: 95%;
+}
+
+.contact-area{
+  flex-direction: column;
+  padding: 10px;
+}
+.product-content{
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+}
+
+@media (max-width:454px) {
+  .menu-icon{
+    top: 110px;
+  }
+}

@@ -33,7 +33,7 @@ export default function CheckOut() {
         ))}
       </div>
       <div className="amount wrapper">
-        <h4>{total}</h4>
+        <h4> Total : {total}</h4>
         <button onClick={handlePlaceOrder}>Place Order</button>
       </div>
     </>

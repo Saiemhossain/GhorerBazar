@@ -15,12 +15,7 @@ img{
   margin: 0 auto;
 }
 
-.top-header-area h2{
-  font-size: 18px;
-  text-align: center;
-  background: #F18935;
-  padding: 12px 0;
-}
+
 
 .header{
   display: flex;

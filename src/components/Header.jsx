@@ -14,12 +14,7 @@ export default function Header() {
   },[])
   return (
     <section>
-      <div className="top-header-area">
-        <h2>
-          এটা ঘরেরবাজার এর থেকে idea নিয়ে একটা ওয়েবসাইট, এখানে কোন প্রোডাক্ট
-          কিনতে পারবেন না 😊
-        </h2>
-      </div>
+     
       <div className="header-area">
         <div className="header">
           <div className="logo">
@@ -138,3 +133,4 @@ export default function Header() {
     </section>
   );
 }
+

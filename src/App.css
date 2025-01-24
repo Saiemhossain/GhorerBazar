@@ -120,6 +120,7 @@ padding: 0 25px;
   flex-direction: column;
   gap: 20px;
   font-size: 20px;
+ 
 }
 .mobile-menu ul li {
   margin: 10px 0;
@@ -272,7 +273,7 @@ Link{
 }
 
 .faq-item.active .icon {
-  transform: rotate(45deg); /* Change "+" to "x" on expand */
+  transform: rotate(45deg); 
 }
 
 .service-area h2{
@@ -410,9 +411,11 @@ display: block;
 }
 
  .hamburger{ 
-   display: block; 
- 
+   display: block;
+
   }
+
+ 
 
   .mobile-logo{
     display: block;
@@ -431,8 +434,8 @@ display: block;
 
     .menu-icon{
   display: block;
-    position: fixed;
-  top: 90px;
+  position: fixed;
+  top: 20px;
     right:0; 
     z-index: 1001;
     width: 30px;
@@ -463,6 +466,6 @@ textarea{
 
 @media (max-width:454px) {
   .menu-icon{
-    top: 110px;
+  
   }
 }
